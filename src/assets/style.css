@@ -1,0 +1,11 @@
+.drop-zone{
+    border: 2px dashed #D5D5D5;
+    border-radius: 1rem;
+    padding: 20px;
+    text-align: center;
+    cursor: pointer;
+}
+button{
+    outline: none;
+    border: none;
+}
