@@ -5,7 +5,6 @@ import './assets/style.css';
 
 const App = () => {
   const [images, setImages] = useState([]);
-  // const [error, setError] = useState('');
   const [ validationErrMsg, setValidationErrMsg ] = useState('');
   const [ successErrMsg, setSuccessErrMsg ] = useState('');
 
