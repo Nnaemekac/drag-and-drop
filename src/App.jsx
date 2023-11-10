@@ -14,7 +14,7 @@ const App = () => {
     setImages(storedImages);
   }, []);
 
-  const saveImagesToLocalStorage = (newImages) => {
+  const localStorageSave = (newImages) => {
     localStorage.setItem('uploadedImages', JSON.stringify(newImages));
   };
 
@@ -43,7 +43,7 @@ const App = () => {
     const updatedImages = [...images, ...filteredFiles];
     setImages(updatedImages);
 
-    saveImagesToLocalStorage(updatedImages);
+    localStorageSave(updatedImages);
     
     setSuccessErrMsg('Images uploaded successfully!');
     window.xuiAnime('successAlert');
@@ -54,7 +54,7 @@ const App = () => {
     updatedImages.splice(index, 1);
     setImages(updatedImages);
 
-    saveImagesToLocalStorage(updatedImages);
+    localStorageSave(updatedImages);
   };
 
   const readFileAsDataURL = (file) => {
