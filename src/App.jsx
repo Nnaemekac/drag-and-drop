@@ -38,7 +38,6 @@ const App = () => {
       return;
     }
 
-    // setError('');
     setValidationErrMsg('');
 
     const updatedImages = [...images, ...filteredFiles];
